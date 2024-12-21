@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "Chekanka",
+    "specfile": "/home/antoniokapuchino/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/WEB3-HW-4/certora/spec/ERC20.spec",
+    "specfileOrigRelpath": "certora/spec/ERC20.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

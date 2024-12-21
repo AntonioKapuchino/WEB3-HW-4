@@ -1,66 +1,40 @@
-## Foundry
+#Отчет HW4
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Команды для запуска:
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```
+export CERTORAKEY=<personal_access_key>
+certoraRun ./certora/conf/default.conf --optimistic_loop
 ```
 
-### Test
+** 
 
-```shell
-$ forge test
-```
+Отчет до изменений - https://prover.certora.com/output/2221557/a16170b1c77148d59e7c72cfa5b88d08?anonymousKey=bf4473a14e28fb960a5f4acee1fa60309b89aa4f
 
-### Format
+Отчет после изменений - https://prover.certora.com/output/2221557/10d5e11d2f654b0d85a06b5d0f11c2e9?anonymousKey=10629e40147e80f0470c9b5f96dce64a2798e16f
 
-```shell
-$ forge fmt
-```
+Изменения:
 
-### Gas Snapshots
+- Сумма балансов ≠ totalSupply.
+- Перевод с баланса 0.
+- Перевод отрицательного количества токенов.
+- Сжигание больше токенов, чем есть на балансе.
+- Переполнение общего предложения в mint.
 
-```shell
-$ forge snapshot
-```
+Нарушения:
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- Свойство: Свойство сохранения суммы всех балансов.
+    - Почему нарушено: При выполнении функции transfer баланс отправителя не уменьшается, но баланс получателя увеличивается.
+    - Какое изменение к этому привело: В функции transfer убрано уменьшение баланса отправителя, оставлено только увеличение баланса получателя:
+- Свойство: Невозможность перевода токенов, если баланс отправителя равен 0.
+    - Почему нарушено: В функции transferFromZeroBalance разрешается выполнять перевод, даже если баланс отправителя равен 0.
+    - Какое изменение к этому привело: Добавлена функция, которая игнорирует баланс отправителя.
+- Свойство: Сумма перевода должна быть положительным числом.
+    - Почему нарушено: В функции transferNegative разрешается передавать отрицательное значение, что приводит к увеличению баланса отправителя и уменьшению баланса получателя.
+    - Какое изменение к этому привело: Добавлена функция transferNegative, которая позволяет передавать отрицательное значение.
+- Свойство: Невозможность сжигать больше токенов, чем есть на балансе. 
+    - Почему нарушено: В функции burn разрешается сжигать любое количество токенов, игнорируя текущий баланс.
+    - Какое изменение к этому привело: Убрана проверка баланса в функции burn
+- Свойство: Общая сумма токенов (totalSupply) не должна превышать максимальное значение uint256.
+    - Почему нарушено: Функция mint намеренно вызывает переполнение общего предложения токенов.
+    - Какое изменение к этому привело: В функции mint добавлено превышение максимального значения uint256.

@@ -1,0 +1,18 @@
+{
+    "importFilesToOrigRelpaths": {
+        "certora/spec/helpers/helpers.spec": "certora/spec/helpers/helpers.spec",
+        "certora/spec/methods/IERC20.spec": "certora/spec/methods/IERC20.spec",
+        "certora/spec/methods/IERC2612.spec": "certora/spec/methods/IERC2612.spec"
+    },
+    "primary_contract": "Chekanka",
+    "specfile": "certora/spec/ERC20.spec",
+    "specfileOrigRelpath": "certora/spec/ERC20.spec",
+    "specfilesToImportDecls": {
+        "certora/spec/ERC20.spec": [
+            "methods/IERC20.spec",
+            "helpers/helpers.spec",
+            "methods/IERC2612.spec"
+        ]
+    },
+    "type": "spec"
+}

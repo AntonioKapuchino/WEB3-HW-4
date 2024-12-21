@@ -1,0 +1,85 @@
+{
+    "/home/antoniokapuchino/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/WEB3-HW-4": [
+        {
+            "anonymous_key": "10629e40147e80f0470c9b5f96dce64a2798e16f",
+            "domain": "https://prover.certora.com",
+            "job_id": "10d5e11d2f654b0d85a06b5d0f11c2e9",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/10d5e11d2f654b0d85a06b5d0f11c2e9?anonymousKey=10629e40147e80f0470c9b5f96dce64a2798e16f",
+            "time": 1734816735,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "0777fe02bbf5e01b5f434f8ab4b7a69fdc09a61d",
+            "domain": "https://prover.certora.com",
+            "job_id": "174cdf253d7d4377b01801804a31a882",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/174cdf253d7d4377b01801804a31a882?anonymousKey=0777fe02bbf5e01b5f434f8ab4b7a69fdc09a61d",
+            "time": 1734814569,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "bf4473a14e28fb960a5f4acee1fa60309b89aa4f",
+            "domain": "https://prover.certora.com",
+            "job_id": "a16170b1c77148d59e7c72cfa5b88d08",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/a16170b1c77148d59e7c72cfa5b88d08?anonymousKey=bf4473a14e28fb960a5f4acee1fa60309b89aa4f",
+            "time": 1734813396,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "735bf4c091a3f1e78a666c8cdcbddbcdef650671",
+            "domain": "https://prover.certora.com",
+            "job_id": "458981447ad24e628933a2a2791b2394",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/458981447ad24e628933a2a2791b2394?anonymousKey=735bf4c091a3f1e78a666c8cdcbddbcdef650671",
+            "time": 1734811998,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "580d678a121d556b216b98458dfffaca75daa2c7",
+            "domain": "https://prover.certora.com",
+            "job_id": "a6ccd5979ec840eb9e31a9a3d580cba9",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/a6ccd5979ec840eb9e31a9a3d580cba9?anonymousKey=580d678a121d556b216b98458dfffaca75daa2c7",
+            "time": 1734810429,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "c8db9f43de0dbec1c8ed39965d6d5b67004b7494",
+            "domain": "https://prover.certora.com",
+            "job_id": "6ecf8857d2fa4118886fd5469cb28ee9",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/6ecf8857d2fa4118886fd5469cb28ee9?anonymousKey=c8db9f43de0dbec1c8ed39965d6d5b67004b7494",
+            "time": 1734809147,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "70b8035935da1e498b175127986917e17568b8fd",
+            "domain": "https://prover.certora.com",
+            "job_id": "d7a9648478984ef39147a3b639573c8a",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/d7a9648478984ef39147a3b639573c8a?anonymousKey=70b8035935da1e498b175127986917e17568b8fd",
+            "time": 1734807751,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "7ccaeea1d2a2fd67c5a8d8a15945245724311291",
+            "domain": "https://prover.certora.com",
+            "job_id": "6f5c947290914ee19bc4399bc298a06a",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/6f5c947290914ee19bc4399bc298a06a?anonymousKey=7ccaeea1d2a2fd67c5a8d8a15945245724311291",
+            "time": 1734806558,
+            "user_id": "2221557"
+        },
+        {
+            "anonymous_key": "27da1a0594547f4873e14e2b287f13a240c1b65d",
+            "domain": "https://prover.certora.com",
+            "job_id": "34fec991b4244d6386234fd1859b6134",
+            "notify_msg": "ERC20Rules",
+            "output_url": "https://prover.certora.com/output/2221557/34fec991b4244d6386234fd1859b6134?anonymousKey=27da1a0594547f4873e14e2b287f13a240c1b65d",
+            "time": 1734299658,
+            "user_id": "2221557"
+        }
+    ]
+}

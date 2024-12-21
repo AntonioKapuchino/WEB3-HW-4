@@ -1,0 +1,15 @@
+Saving last configuration file to .certora_internal/24_12_21_21_19_36_424/run.conf
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /home/antoniokapuchino/Документы/WEB3-HW-4/.certora_internal/24_12_21_21_19_36_424/.certora_config
+In /home/antoniokapuchino/Документы/WEB3-HW-4/certora/spec/ERC20.spec, found the imports: [('helpers/helpers.spec', '1:1'), ('methods/IERC20.spec', '2:2'), ('methods/IERC2612.spec', '3:2')]
+In /home/antoniokapuchino/Документы/WEB3-HW-4/certora/spec/helpers/helpers.spec, found the imports: []
+In /home/antoniokapuchino/Документы/WEB3-HW-4/certora/spec/methods/IERC20.spec, found the imports: []
+In /home/antoniokapuchino/Документы/WEB3-HW-4/certora/spec/methods/IERC2612.spec, found the imports: []
+copying spec file /home/antoniokapuchino/Документы/WEB3-HW-4/certora/spec/ERC20.spec to /home/antoniokapuchino/Документы/WEB3-HW-4/.certora_internal/24_12_21_21_19_36_424/.certora_sources/.0_ERC20.spec.spec
+writing /home/antoniokapuchino/Документы/WEB3-HW-4/.certora_internal/24_12_21_21_19_36_424/.certora_verify.json
+running ['java', '-jar', '/home/antoniokapuchino/.local/share/pipx/venvs/certora-cli/lib/python3.12/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/home/antoniokapuchino/Документы/WEB3-HW-4/.certora_internal/24_12_21_21_19_36_424']
+Failed to run Certora Prover locally. Please check the errors below for problems in the specifications (.spec files) or the prover_args defined in the .conf file.
+[main] ERROR ALWAYS - Found errors in certora/spec/ERC20.spec:
+[main] ERROR ALWAYS - Error in spec file (ERC20.spec:26:56): `STORAGE` keyword is redundant in hooks
+[main] ERROR ALWAYS - Error in spec file (ERC20.spec:30:77): `STORAGE` keyword is redundant in hooks
+build failed

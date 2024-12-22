@@ -1,6 +1,8 @@
-#Отчет HW4
+Отчет HW4
 
-Команды для запуска:
+Команды, необходимые для запуска:
+
+optimistic_loop нужен чтобы не создавать функции-заглушки. Чтобы certora нормально проверяла name(), symbol() и eip712.
 
 ```
 export CERTORAKEY=<personal_access_key>
@@ -8,6 +10,7 @@ certoraRun ./certora/conf/default.conf --optimistic_loop
 ```
 
 ** 
+Cсылки на отчет успешный и отчет с 5+ ошибками:
 
 Отчет до изменений - https://prover.certora.com/output/2221557/a16170b1c77148d59e7c72cfa5b88d08?anonymousKey=bf4473a14e28fb960a5f4acee1fa60309b89aa4f
 
